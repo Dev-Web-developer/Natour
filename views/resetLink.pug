@@ -1,0 +1,34 @@
+extends base 
+
+block content
+  main.main---1
+    link(rel="stylesheet", type="text/css", href="/css/loginStyle.css")
+    div.main
+      div.container.a-container#a-container
+        form(id="c-form", class="form")
+          h2.form_title.title Reset You Account
+          div.form__icons
+          input.form__input#email_new(type="email", placeholder="Reset Email")
+          button(type="submit",form="c-form").submit-a.submit-c.form__button.button.submit Reset now
+
+
+      div.container.b-container#b-container
+        form.form.form--login(id="b-form", class="form")
+          h2.form_title.title Sign in to Website  
+          input.form__input#email(type="email", placeholder="you@example.com")
+          input.form__input#password(type="password", placeholder="••••••••")
+          a.form__link(href="/resetlink") Forgot your password?
+          button(type="submit",form="b-form").form__button.button.submit.submit-b LOG IN
+
+      div.switch#switch-cnt
+        div.switch__circle
+        div.switch__circle.switch__circle--t
+        div.switch__container#switch-c1
+          h2.switch__title.title Welcome Back !
+          p.switch__description.description To keep connected with us please login with your personal info
+          button().switch__button.button.switch-btn LOG IN
+
+        div.switch__container#switch-c2.is-hidden
+          h2.switch__title.title Hello Friend !
+          p.switch__description.description Enter your personal details and start journey with us
+          button().switch__button.button.switch-btn SIGN UP
